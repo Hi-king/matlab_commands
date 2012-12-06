@@ -9,8 +9,6 @@ end
 range=1:size(A,anotherdim); 
 indexs=arrayfun( @(x) round(x/size(A,anotherdim)*(size(B,anotherdim)-1) + 1), range);
 
-A
-B
 if(dim==1)
   BB=B(:, indexs);
 elseif(dim==2)
